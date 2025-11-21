@@ -2,96 +2,127 @@
   type: map
   contents:
     - name: Full Name
-      value: Albert Einstein
-    - name: Date of Birth
-      value: 14th March 1879
-    - name: Languages
-      value: English, German
+      value: Aeyan Ashraf
+    - name: Location
+      value: Amherst, Massachusetts
+    - name: Phone
+      value: (413) 472-0196
+    - name: Email
+      value: <a href="mailto:aeyanashraf@umass.edu">aeyanashraf@umass.edu</a>
+    - name: Website
+      value: <a href="https://aeyanashraf.github.io">aeyanashraf.github.io</a>
+    - name: GitHub
+      value: <a href="https://github.com/aeyanashraf">@aeyanashraf</a>
+    - name: LinkedIn
+      value: <a href="https://www.linkedin.com/in/aeyanashraf">linkedin.com/in/aeyanashraf</a>
 
 - title: Education
   type: time_table
   contents:
-    - title: PhD
-      institution: University of Zurich, Zurich, Switzerland
-      year: 1905
+    - title: M.S. in Computer Science, GPA 3.9/4.0
+      institution: University of Massachusetts Amherst
+      year: Sep 2023 – May 2025
       description:
-        - Description 1.
-        - Description 2.
-        - title: Description 3.
-          contents:
-            - Sub-description 1.
-            - Sub-description 2.
-    - title: Federal teaching diploma
-      institution: Eidgenössische Technische Hochschule, Zurich, Switzerland
-      year: 1900
+        - Focus on trustworthy LLM systems, retrieval pipelines, and ML infrastructure.
+    - title: B.Tech. in Computer Engineering
+      institution: Aligarh Muslim University
+      year: Aug 2019 – May 2023
       description:
-        - Description 1.
-        - Description 2.
+        - Graduated with honors; led ML research collaborations across medical imaging and cybersecurity.
 
 - title: Experience
   type: time_table
   contents:
-    - title: Professor of Theoretical Physics
-      institution: Institute for Advanced Study, Princeton University
-      year: 1933 - 1955
+    - title: Machine Learning Researcher
+      institution: Goldman Sachs · Amherst, MA
+      year: Jan 2025 – Jun 2025
       description:
-        - Description 1.
-        - Description 2.
-        - title: Description 3.
-          contents:
-            - Sub-description 1.
-            - Sub-description 2.
-    - title: Visiting Professor
-      institution: California Institute of Technology, Pasadena, California, US
-      year: 1933
+        - Designed a scalable RAG pipeline for SEC 10-K filings using Python, LangChain, and GPT OSS 120B, automating ingestion, chunking, and multi-hop QA generation.
+        - Built factoid extraction and answer-grounding workflows with iterative LLM refinement, reaching 94% precision in automatic evaluations.
+        - Deployed LLM-as-a-judge quality controls for fairness, reasoning traceability, and numeric fidelity across 1,000+ QA samples, benchmarking with precision/recall, nDCG, BLEU, and ROUGE-L.
+        - Resulting work submitted to EMNLP 2025.
+    - title: Cybersecurity Research Intern — Adversarial ML
+      institution: Binghamton University (SUNY) · Binghamton, NY
+      year: Jan 2023 – May 2023
       description:
-        - Description 1.
-        - Description 2.
-
-    - title: Director
-      institution: Kaiser Wilhelm Institute for Physics, Berlin, Germany.
-      year: 1917-1933
-
-    - title: Professor of Theoretical Physics
-      institution: Karl-Ferdinand University, Prague, Czechoslovakia
-      year: 1911 - 1917
+        - Reviewed state-of-the-art backdoor attack methods targeting deep learning algorithms in unsupervised domain adaptation.
+        - Implemented trojan attacks that achieved an 89% success rate, highlighting defenses needed for high-stakes ML deployments.
+    - title: Computer Vision Research Intern — Medical AI
+      institution: University of Maryland · College Park, MD
+      year: May 2022 – Jul 2022
       description:
+        - Built and optimized TeliNet 2.0 for radiology image analysis (140 GB), delivering a 10% accuracy lift over the ECCV baseline.
+        - Reduced inference memory footprint by 30% via block pruning and quantization to meet production constraints.
 
-    - title: Associate Professor of Theoretical Physics
-      institution: University of Zurich, Zurich, Switzerland
-      year: 1909 - 1911
-
-- title: Open Source Projects
+- title: Projects
   type: time_table
   contents:
-    - title: <a href="https://github.com/alshedivat/al-folio">al-folio</a>
-      year: 2015-now
-      description: A beautiful, simple, clean, and responsive Jekyll theme for academics.
+    - title: PerfectPitch
+      year: 2024
+      description:
+        - LLM-powered mock interview and resume coach using Next.js, Tailwind CSS, Firebase, Gemini, and Assembly.ai.
+        - Integrated ATS-style NLP feedback loops that improved job match scores and interview preparedness metrics.
+      linkitems:
+        - linkname: GitHub
+          link: https://github.com/aeyanashraf/perfectpitch
+        - linkname: Demo
+          link: https://github.com/aeyanashraf/perfectpitch/raw/refs/heads/main/Demo.mp4
+    - title: What Makes Amherst Look Like Amherst?
+      year: 2023
+      description:
+        - Curated a 60K+ frame cityscape dataset and trained interpretable CNNs (ResNet50, VGG16) that reached 93% test accuracy.
+        - Applied Grad-CAM visualizations and confusion analysis to surface location-specific signals.
+      linkitems:
+        - linkname: GitHub
+          link: https://github.com/aeyanashraf/What-makes-Amherst-look-like-Amherst
+    - title: SSORT — Semantic Segmentation for Off-Road Traversability
+      year: 2022
+      description:
+        - Fused SegFormer with Hugging Face pipelines to improve IOU and pixel accuracy by 10% on geospatial terrain datasets.
+        - Served models through a Flask API with benchmarking harnesses for F1 score and pixel-accuracy tracking.
+      linkitems:
+        - linkname: GitHub
+          link: https://github.com/aeyanashraf/SSORT--Semantic-Segmentation-for-Off-Road-Traversibility
 
-- title: Honors and Awards
-  type: time_table
-  contents:
-    - year: 1921
-      items:
-        - Nobel Prize in Physics
-        - Matteucci Medal
-    - year: 2029
-      items:
-        - Max Planck Medal
-
-- title: Academic Interests
+- title: Skills
   type: nested_list
   contents:
-    - title: Topic 1.
+    - title: Programming Languages
       items:
-        - Description 1.
-        - Description 2.
-    - title: Topic 2.
+        - Python, Java, SQL (MySQL), Bash, C++
+    - title: Machine Learning
       items:
-        - Description 1.
-        - Description 2.
+        - PyTorch, TensorFlow, Keras, Scikit-learn, TFX, MLflow, Hugging Face, Large Language Models
+    - title: Cloud & Ops
+      items:
+        - Docker, Kubernetes, Airflow, GitHub Actions, Google Cloud Platform
+    - title: Tooling
+      items:
+        - Git, Firebase, Flutter, Linux, LaTeX
 
-- title: Other Interests
-  type: list
+- title: Publications
+  type: time_table
   contents:
-    - <u>Hobbies:</u> Hobby 1, Hobby 2, etc.
+    - title: FINHOP — Benchmarking Retrieval-Augmented Generation for Multi-Hop Questions on Long Financial Documents
+      year: Under review (EMNLP 2025)
+      description:
+        - Introduces multi-hop evaluation suite for financial RAG systems with grounded answer tracing across long-form SEC filings.
+    - title: A Vision Transformer-Based Approach to Bearing Fault Classification via Vibration Signals
+      year: APSIPA ASC 2023
+      description:
+        - Demonstrated ViT-based diagnostics that improved bearing fault detection accuracy on industrial vibration datasets.
+    - title: Zea Mays Leaf Disease Classification using Swin-Transformer
+      year: SIGMAA 2023
+      description:
+        - Built Swin-Transformer pipelines for crop-disease identification, enabling early-stage intervention recommendations.
+
+- title: Awards & Recognition
+  type: time_table
+  contents:
+    - year: 2024
+      items:
+        - Hack413 — 1st Place
+        - HackUMass XI — 1st Place
+    - year: 2023
+      items:
+        - Sir Syed Mentoring and Assistance Fellowship (SSMAF)

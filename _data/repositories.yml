@@ -1,14 +1,9 @@
 github_users:
-  - torvalds
-  - alshedivat
+  - aeyanashraf
 
 repo_description_lines_max: 2
 
 github_repos:
-  - alshedivat/al-folio
-  - jekyll/jekyll
-  - twbs/bootstrap
-  - jquery/jquery
-  - FortAwesome/Font-Awesome
-  - mathjax/MathJax
-  - jpswalsh/academicons
+  - aeyanashraf/perfectpitch
+  - aeyanashraf/What-makes-Amherst-look-like-Amherst
+  - aeyanashraf/SSORT--Semantic-Segmentation-for-Off-Road-Traversibility

@@ -1,81 +1,23 @@
 ---
 layout: page
-title: project 2
-description: a project with a background image and giscus comments
+title: What Makes Amherst Look Like Amherst?
+description: 60K-frame geospatial vision study on the signals that distinguish Amherst, MA from other college towns.
 img: assets/img/3.jpg
 importance: 2
 category: work
-giscus_comments: true
+github: https://github.com/aeyanashraf/What-makes-Amherst-look-like-Amherst
 ---
 
-Every project has a beautiful feature showcase page.
-It's easy to include images in a flexible 3-column grid format.
-Make your photos 1/3, 2/3, or full width.
+This project explores whether we can teach a model to understand the “feel” of Amherst, MA by learning from its built environment. The pipeline covers dataset curation, geospatial augmentation, interpretable CNN training, and qualitative analyses that surface what the models actually latch onto.
 
-To give your project a background in the portfolio page, just add the img tag to the front matter like so:
+### Dataset + labeling
+- Pulled >60K street-level frames across seasons, stratified to balance residential, downtown, and campus viewpoints.
+- Normalized lighting/seasonality via augmentation and created “contrast sets” pairing Amherst with peer college towns.
 
-    ---
-    layout: page
-    title: project
-    description: a project with a background image
-    img: /assets/img/12.jpg
-    ---
+### Modeling highlights
+- Fine-tuned ResNet50 and VGG16 to 93% test accuracy with early-stopping on stratified validation folds.
+- Added Grad-CAM overlays plus confusion-matrix storytelling to verify that Amherst-specific cues (brick façades, Pioneer Valley tree lines, PVTA buses) truly influenced predictions.
 
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/1.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/3.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    Caption photos easily. On the left, a road goes through a tunnel. Middle, leaves artistically fall in a hipster photoshoot. Right, in another hipster photoshoot, a lumberjack grasps a handful of pine needles.
-</div>
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    This image can also have a caption. It's like magic.
-</div>
-
-You can also put regular text between your rows of images.
-Say you wanted to write a little bit about your project before you posted the rest of the images.
-You describe how you toiled, sweated, _bled_ for your project, and then... you reveal its glory in the next row of images.
-
-<div class="row justify-content-sm-center">
-    <div class="col-sm-8 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    You can also have artistically styled 2/3 + 1/3 images, like these.
-</div>
-
-The code is simple.
-Just wrap your images with `<div class="col-sm">` and place them inside `<div class="row">` (read more about the <a href="https://getbootstrap.com/docs/4.4/layout/grid/">Bootstrap Grid</a> system).
-To make images responsive, add `img-fluid` class to each; for rounded corners and shadows use `rounded` and `z-depth-1` classes.
-Here's the code for the last row of images above:
-
-{% raw %}
-
-```html
-<div class="row justify-content-sm-center">
-  <div class="col-sm-8 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-  </div>
-  <div class="col-sm-4 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-  </div>
-</div>
-```
-
-{% endraw %}
+### Takeaways
+- Urban morphology signals climb quickly with enough diversity in the capture set.
+- Interpretability artifacts are essential for communicating why a classification matters to planners and local stakeholders.

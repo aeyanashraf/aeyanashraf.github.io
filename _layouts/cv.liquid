@@ -7,9 +7,12 @@ layout: default
       <h1 class="post-title">
         {{ page.title }}
         {% if page.cv_pdf %}
+          {% assign cv_first_char = page.cv_pdf | slice: 0, 1 %}
           <a
             {% if page.cv_pdf contains '://' %}
               href="{{ page.cv_pdf }}"
+            {% elsif cv_first_char == '/' %}
+              href="{{ page.cv_pdf | relative_url }}"
             {% else %}
               href="{{ page.cv_pdf | prepend: 'assets/pdf/' | relative_url }}"
             {% endif %}
@@ -58,9 +61,12 @@ layout: default
       <h1 class="post-title">
         {{ page.title }}
         {% if page.cv_pdf %}
+          {% assign cv_first_char = page.cv_pdf | slice: 0, 1 %}
           <a
             {% if page.cv_pdf contains '://' %}
               href="{{ page.cv_pdf }}"
+            {% elsif cv_first_char == '/' %}
+              href="{{ page.cv_pdf | relative_url }}"
             {% else %}
               href="{{ page.cv_pdf | prepend: 'assets/pdf/' | relative_url }}"
             {% endif %}

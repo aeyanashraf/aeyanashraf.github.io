@@ -33,26 +33,22 @@
 - title: Experience
   type: time_table
   contents:
+    - title: Research Assistant — LiteCrackSeg
+      institution: Monash University · Remote
+      year: Sep 2025 – Present
+      description:
+        - Co-developed LiteCrackSeg, a 0.55M-parameter, 3.40 GFLOPs hybrid CNN–Transformer model for efficient crack segmentation on edge devices.
+        - Designed the Dynamic Edge Enhancement Module (DEEM), fusing Sobel and Laplacian-of-Gaussian filters with dynamic convolutions to refine thin and fragmented crack boundaries.
+        - Proposed Context-Aware Domain Adaptive Regularization (CoDAR) to penalize overconfident encoder channels, improving domain robustness and zero-shot cross-dataset generalization without inference-time overhead.
+        - Achieved state-of-the-art F1 and mIoU on Crack500, DeepCrack, and TUT while maintaining real-time performance on NVIDIA Jetson Orin Nano (64 FPS, low energy per inference).
     - title: Machine Learning Researcher
       institution: Goldman Sachs · Amherst, MA
-      year: Jan 2025 – Jun 2025
+      year: Jan 2025 – Aug 2025
       description:
-        - Designed a scalable RAG pipeline for SEC 10-K filings using Python, LangChain, and GPT OSS 120B, automating ingestion, chunking, and multi-hop QA generation.
-        - Built factoid extraction and answer-grounding workflows with iterative LLM refinement, reaching 94% precision in automatic evaluations.
-        - Deployed LLM-as-a-judge quality controls for fairness, reasoning traceability, and numeric fidelity across 1,000+ QA samples, benchmarking with precision/recall, nDCG, BLEU, and ROUGE-L.
-        - Resulting work submitted to EMNLP 2025.
-    - title: Cybersecurity Research Intern — Adversarial ML
-      institution: Binghamton University (SUNY) · Binghamton, NY
-      year: Jan 2023 – May 2023
-      description:
-        - Reviewed state-of-the-art backdoor attack methods targeting deep learning algorithms in unsupervised domain adaptation.
-        - Implemented trojan attacks that achieved an 89% success rate, highlighting defenses needed for high-stakes ML deployments.
-    - title: Computer Vision Research Intern — Medical AI
-      institution: University of Maryland · College Park, MD
-      year: May 2022 – Jul 2022
-      description:
-        - Built and optimized TeliNet 2.0 for radiology image analysis (140 GB), delivering a 10% accuracy lift over the ECCV baseline.
-        - Reduced inference memory footprint by 30% via block pruning and quantization to meet production constraints.
+        - Developed a scalable RAG pipeline for SEC 10-K filings using Python, LangChain, and GPT OSS 120B, automating data ingestion, chunking, and multi-hop QA generation across enterprise-scale corpora.
+        - Engineered an end-to-end ML pipeline for factoid extraction and answer grounding; implemented iterative LLM-based refinement achieving 94% precision in automatic evaluations.
+        - Designed and deployed quality control workflows using LLM-as-a-judge scoring for fairness, reasoning traceability, and numeric fidelity across 1,000+ QA samples.
+        - Benchmarked AI systems using precision, recall, nDCG, BLEU, and ROUGE-L to validate retrieval/generation robustness in high-stakes document QA systems.
 
 - title: Projects
   type: time_table
@@ -103,18 +99,18 @@
 - title: Publications
   type: time_table
   contents:
-    - title: FINHOP — Benchmarking Retrieval-Augmented Generation for Multi-Hop Questions on Long Financial Documents
-      year: Under review (EMNLP 2025)
+    - title: LiteCrackSeg: A Hybrid Architecture for Efficient Crack Segmentation on Edge Devices
+      year: Submitted to CVPR 2026
       description:
-        - Introduces multi-hop evaluation suite for financial RAG systems with grounded answer tracing across long-form SEC filings.
+        - Hybrid CNN–Transformer architecture with DEEM and CoDAR for efficient, edge-deployable crack segmentation across diverse concrete surfaces.
+    - title: FINHOP: Benchmarking Retrieval-Augmented Generation for Multi-Hop Questions on Long Financial Documents
+      year: Manuscript under preparation
+      description:
+        - Multi-hop evaluation suite for financial RAG systems with grounded answer tracing across long-form SEC filings.
     - title: A Vision Transformer-Based Approach to Bearing Fault Classification via Vibration Signals
       year: APSIPA ASC 2023
       description:
         - Demonstrated ViT-based diagnostics that improved bearing fault detection accuracy on industrial vibration datasets.
-    - title: Zea Mays Leaf Disease Classification using Swin-Transformer
-      year: SIGMAA 2023
-      description:
-        - Built Swin-Transformer pipelines for crop-disease identification, enabling early-stage intervention recommendations.
 
 - title: Awards & Recognition
   type: time_table

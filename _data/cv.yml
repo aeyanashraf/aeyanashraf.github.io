@@ -99,11 +99,11 @@
 - title: Publications
   type: time_table
   contents:
-    - title: LiteCrackSeg: A Hybrid Architecture for Efficient Crack Segmentation on Edge Devices
+    - title: "LiteCrackSeg: A Hybrid Architecture for Efficient Crack Segmentation on Edge Devices"
       year: Submitted to CVPR 2026
       description:
         - Hybrid CNN–Transformer architecture with DEEM and CoDAR for efficient, edge-deployable crack segmentation across diverse concrete surfaces.
-    - title: FINHOP: Benchmarking Retrieval-Augmented Generation for Multi-Hop Questions on Long Financial Documents
+    - title: "FINHOP: Benchmarking Retrieval-Augmented Generation for Multi-Hop Questions on Long Financial Documents"
       year: Manuscript under preparation
       description:
         - Multi-hop evaluation suite for financial RAG systems with grounded answer tracing across long-form SEC filings.
